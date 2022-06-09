@@ -10,6 +10,7 @@ import { useEffect, useState } from 'react';
 import LoadingScreen from './components/Shared/LoadingScreen';
 import Error from './components/Shared/Error';
 import Education from './components/Education/Education';
+import Projects from './components/Projects/Projects';
 
 function App() {
   const [loading, setLoading] = useState(true)
@@ -28,7 +29,7 @@ function App() {
         <Route path='/contactme' element={<ContactUs/>}/>
         <Route path='*' element={<Error/>}/>
         <Route path='/education' element={<Education/>}/>
-{/* <Route path='/projects' element={} */}
+<Route path='/projects' element={<Projects/>}/>
       </Routes>
       <Footer/>
     </div>):
