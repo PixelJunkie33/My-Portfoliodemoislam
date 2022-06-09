@@ -1,10 +1,16 @@
 import logo from './logo.svg';
 import './App.css';
+import Navbar from './components/Shared/Navbar';
+import { Route, Routes } from 'react-router-dom';
+import Home from './components/home/Home';
 
 function App() {
   return (
     <div className="App">
-      <h1>hello</h1>
+      <Navbar></Navbar>
+      <Routes>
+        <Route path='/' element={<Home></Home>}/>
+      </Routes>
     </div>
   );
 }
