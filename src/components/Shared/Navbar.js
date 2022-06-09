@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
+import Typewriter from 'typewriter-effect';
 const Navbar = () => {
     return (
         <div class="navbar lg:bg-slate-600 lg:text-white sm:text-black">
@@ -17,7 +17,15 @@ const Navbar = () => {
         <li><Link to="/blogs">Blogs</Link></li>
       </ul>
     </div>
-    <button class="btn btn-ghost normal-case lg:text-xl">F</button>
+    <button class="btn btn-ghost normal-case lg:text-xl">
+    <Typewriter
+  options={{
+    strings: ['Fakhrul Islam Fuad'],
+    autoStart: true,
+    loop: true,
+  }}
+/>
+    </button>
   </div>
   <div class="navbar-center hidden lg:flex">
     <ul class="menu menu-horizontal p-0">
