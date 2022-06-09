@@ -4,13 +4,15 @@ import Navbar from './components/Shared/Navbar';
 import { Route, Routes } from 'react-router-dom';
 import Home from './components/home/Home';
 import Footer from './components/Shared/Footer';
+import { ContactUs } from './components/contactForm/ContactMe';
 
 function App() {
   return (
-    <div className="App">
+    <div className="font-serif">
       <Navbar/>
-      <Routes>
+      <Routes >
         <Route path='/' element={<Home/>}/>
+        <Route path='/contactme' element={<ContactUs/>}/>
       </Routes>
       <Footer/>
     </div>

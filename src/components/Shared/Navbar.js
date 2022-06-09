@@ -17,7 +17,7 @@ const Navbar = () => {
         <li><Link to="/blogs">Blogs</Link></li>
       </ul>
     </div>
-    <button class="btn btn-ghost normal-case lg:text-xl">Fakhrul Islam Fuad</button>
+    <button class="btn btn-ghost normal-case lg:text-xl">F</button>
   </div>
   <div class="navbar-center hidden lg:flex">
     <ul class="menu menu-horizontal p-0">
