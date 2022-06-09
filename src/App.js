@@ -5,6 +5,7 @@ import { Route, Routes } from 'react-router-dom';
 import Home from './components/home/Home';
 import Footer from './components/Shared/Footer';
 import { ContactUs } from './components/contactForm/ContactMe';
+import Portfolio from './components/Skills/Skills';
 
 function App() {
   return (
@@ -12,7 +13,9 @@ function App() {
       <Navbar/>
       <Routes >
         <Route path='/' element={<Home/>}/>
+        <Route path='/skills' element={<Portfolio/>}/>
         <Route path='/contactme' element={<ContactUs/>}/>
+
       </Routes>
       <Footer/>
     </div>
