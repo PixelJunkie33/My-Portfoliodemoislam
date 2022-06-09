@@ -9,6 +9,7 @@ import Portfolio from './components/Skills/Skills';
 import { useEffect, useState } from 'react';
 import LoadingScreen from './components/Shared/LoadingScreen';
 import Error from './components/Shared/Error';
+import Education from './components/Education/Education';
 
 function App() {
   const [loading, setLoading] = useState(true)
@@ -26,6 +27,7 @@ function App() {
         <Route path='/skills' element={<Portfolio/>}/>
         <Route path='/contactme' element={<ContactUs/>}/>
         <Route path='*' element={<Error/>}/>
+        <Route path='/education' element={<Education/>}/>
 {/* <Route path='/projects' element={} */}
       </Routes>
       <Footer/>

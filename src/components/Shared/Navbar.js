@@ -17,7 +17,7 @@ const Navbar = () => {
         <li><Link to="/blogs">Blogs</Link></li>
       </ul>
     </div>
-    <button class="btn btn-ghost normal-case lg:text-xl">
+    <button class="btn btn-ghost normal-case lg:text-xl font-serif">
     <Typewriter
   options={{
     strings: ['Fakhrul Islam Fuad'],

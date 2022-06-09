@@ -24,7 +24,7 @@ const ProjectShort = () => {
     },
   ];
   return (
-    <div className="my-5">
+    <div className="my-5 mx-5">
             <h1 className='text-3xl font-serif font-bold text-center my-2'>Some of my projects</h1>
             <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
               <div className="card sm:w-full bg-base-100 shadow-xl hover:shadow-2xl hover:shadow-red-800  image-full">
