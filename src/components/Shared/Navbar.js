@@ -34,6 +34,7 @@ const Navbar = () => {
         <li><Link to="/skills">Skills</Link></li>
         <li><Link to="/projects">Projects</Link></li>
         <li><Link to="/blogs">Blogs</Link></li>
+        <li><Link to="#about" > About Me</Link></li>
     </ul>
   </div>
   <div class="navbar-end">

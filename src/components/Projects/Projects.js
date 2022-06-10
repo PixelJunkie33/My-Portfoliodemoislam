@@ -52,7 +52,8 @@ const Projects = () => {
       </h1>
       <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {
-            projects.map(project=><div class="card  bg-base-100 shadow-xl hover:shadow-2xl hover:shadow-red-800">
+            projects.map(project=>
+            <div class="card  bg-base-100 shadow-xl hover:shadow-2xl hover:shadow-red-800">
           <figure>
             <img
               src={project.img1}
