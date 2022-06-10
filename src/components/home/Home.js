@@ -6,7 +6,7 @@ import Services from './Services';
 
 const Home = () => {
     return (
-        <div className=' min-h-screen'>
+        <div className=''>
             <Intro></Intro>
             <About></About>
             <Services></Services>

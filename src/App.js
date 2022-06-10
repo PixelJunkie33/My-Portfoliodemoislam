@@ -11,6 +11,7 @@ import LoadingScreen from './components/Shared/LoadingScreen';
 import Error from './components/Shared/Error';
 import Education from './components/Education/Education';
 import Projects from './components/Projects/Projects';
+import ProjectDescription from './components/Projects/ProjectDescription';
 
 function App() {
   const [loading, setLoading] = useState(true)
@@ -30,6 +31,7 @@ function App() {
         <Route path='*' element={<Error/>}/>
         <Route path='/education' element={<Education/>}/>
 <Route path='/projects' element={<Projects/>}/>
+<Route path='/projectdescription/:id' element={<ProjectDescription/>}/>
       </Routes>
       <Footer/>
     </div>):
