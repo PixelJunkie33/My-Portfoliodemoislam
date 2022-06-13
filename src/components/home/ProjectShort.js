@@ -1,8 +1,5 @@
 import React from "react";
-import daisycomputer from './projects/daisycomputer.png'
-import mrphotoman from './projects/mrphotoman.png'
-import lthouse from './projects/lthouse.png'
-import Projects from './../Projects/Projects';
+import { Fade } from "react-reveal";
 const ProjectShort = () => {
   const projects = [
     {
@@ -28,6 +25,7 @@ const ProjectShort = () => {
     },
   ];
   return (
+    <Fade left cascade>
     <div className="my-5 mx-5">
             <h1 className='text-3xl font-serif font-bold text-center my-2'>Some of my projects</h1>
             <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -43,7 +41,7 @@ const ProjectShort = () => {
               </div></>)}
             </div>
      
-    </div>
+    </div></Fade>
   );
 };
 

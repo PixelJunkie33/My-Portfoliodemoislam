@@ -1,4 +1,5 @@
 import React from 'react';
+import { Fade } from 'react-reveal';
 import Typewriter from 'typewriter-effect';
 
 const Services = () => {
@@ -20,9 +21,10 @@ const Services = () => {
       },
     ];
     return (
+      <Fade left cascade>
       <div className="my-5 mx-5">
               <h1 className='text-5xl font-serif font-bold text-center my-2'>Services</h1>
-              <h1 class="text-4xl font-extrabold text-blue-600 font-mono ml-5 my-5">
+              <h1 className="text-4xl font-extrabold text-blue-600 font-mono ml-5 my-5">
       <Typewriter
   options={{
     strings: ['What I provide..'],
@@ -61,7 +63,7 @@ const Services = () => {
                 </div>
               </div>
        
-      </div>
+      </div></Fade>
     );
   };
 

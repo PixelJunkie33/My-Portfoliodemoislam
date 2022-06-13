@@ -1,9 +1,9 @@
 import React from 'react';
+import { Slide } from 'react-reveal';
 
 import { useParams } from 'react-router-dom';
 const ProjectDescription = () => {
     const {id} =useParams();
-    console.log(id)
     const projects = [
         {
           id: 1,
@@ -15,7 +15,7 @@ const ProjectDescription = () => {
             "Daisy Computer is a good example of how a good eCommerce store should look, as its user-friendly website design instantly makes it easy for customers to find what they need. To speed up shopping experienc, visitor can see all the tools and other user reviews. To purchase a tool he need to login or sign up first. A user can also review the website. The website also have admin role implemented. An admin can add and manage tools. He can manage users and orders too. He can deliver a product only if a customer completes his payment. The client site is deployed on Firebase and the server site on Heroku. Moreover, this website is mobile responsive too.",
           img1: "https://i.ibb.co/JzBqQJx/Screenshot-139.png",
           img2:'https://i.ibb.co/Z1MFJrC/Screenshot-151.png',
-          img3: 'https://i.ibb.co/2FbY0Fr/Screenshot-152.png',
+          img3: 'https://i.ibb.co/n8GpJgL/Screenshot-159.png',
           tools_used: ['ReactJS','ExpressJS','NodeJS', 'Firebase','MongoDB','React-Toast','Stripe'],
         },
         {
@@ -46,42 +46,43 @@ const ProjectDescription = () => {
         },
       ];
       const project = projects.find(project=>project.id>=id);
-      console.log("fuck this shit", project);
     return (
-        <div class="hero min-h-screen bg-base-200 container lg:mx-auto my-6 py-6 rounded">
-  <div class="grid lg:grid-cols-2">
-  <div class="carousel w-full m-3 rounded-xl">
-  <div id="slide1" class="carousel-item relative w-full">
-    <img src={project.img1} alt='' class="w-full" />
-    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-      <a href="#slide3" class="btn btn-circle">❮</a> 
-      <a href="#slide2" class="btn btn-circle">❯</a>
+        
+        <div className="hero min-h-screen bg-base-200 container lg:mx-auto my-6 py-6 rounded">
+  <div className="grid lg:grid-cols-2">
+  <div className="carousel w-full lg:m-3 rounded-xl">
+  <div id="slide1" className="carousel-item relative w-full">
+    <img src={project.img1} alt='' className="w-full" />
+    <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+      
     </div>
   </div> 
-  <div id="slide2" class="carousel-item relative w-full">
-    <img src={project.img2} alt='' class="w-full" />
-    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-      <a href="#slide1" class="btn btn-circle">❮</a> 
-      <a href="#slide3" class="btn btn-circle">❯</a>
+  <div id="slide2" className="carousel-item relative w-full">
+    <img src={project.img2} alt='' className="w-full" />
+    <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+      
     </div>
   </div> 
-  <div id="slide3" class="carousel-item relative w-full">
-    <img src={project.img3} alt='' class="w-full" />
-    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-      <a href="#slide2" class="btn btn-circle">❮</a> 
-      <a href="#slide1" class="btn btn-circle">❯</a>
+  <div id="slide3" className="carousel-item relative w-full">
+    <img src={project.img3} alt='' className="w-full" />
+    <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+      
     </div>
   </div> 
 </div>
     <div className='lg:px-5'>
-      <h1 class="text-5xl font-bold">{project.name}</h1>
-      <p class="py-6">{project.description}</p>
-      <h1 class="text-3xl text-center font-bold mb-7">Tools I've used</h1>
-      <div className="grid lg:grid-cols-4 sm:grid-cols-2 gap-4">
+      <h1 className="text-5xl font-bold">{project.name}</h1>
+    
+      <p className="py-6">{project.description}</p>
+      <h1 className="text-3xl text-center font-bold mb-7">Tools I've used</h1>
+      <Slide left cascade>
+      <div className="grid lg:grid-cols-4 grid-cols-2 gap-4">
               {project.tools_used.map((tool) => (
-                <div className="btn btn-primary hover:shadow-lg hover:shadow-green-700">{tool}</div>
+                <div className="btn btn-outline  hover:shadow-lg hover:shadow-green-700">{tool}</div>
               ))}
+              
             </div>
+            </Slide>
     </div>
   </div>
 </div>
