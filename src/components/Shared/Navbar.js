@@ -2,13 +2,13 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Typewriter from "typewriter-effect";
 import { HashLink } from "react-router-hash-link";
-
+import './Navbar.css'
 const Navbar = () => {
   function refreshPage() {
     window.location.reload(false);
   }
   return (
-    <div className="navbar lg:bg-slate-600 lg:text-white sm:text-black">
+    <div className="navbar daddynav lg:bg-slate-600 lg:text-white sm:text-black" >
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex="0" className="btn btn-ghost lg:hidden">
