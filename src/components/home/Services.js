@@ -27,7 +27,7 @@ const Services = () => {
               <h1 className="text-4xl font-extrabold text-blue-600 font-mono ml-5 my-5">
       <Typewriter
   options={{
-    strings: ['What I provide..'],
+    strings: ['What I can do...'],
     autoStart: true,
     loop: true,
   }}
