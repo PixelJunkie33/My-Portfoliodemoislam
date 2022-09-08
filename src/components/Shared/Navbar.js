@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import Typewriter from "typewriter-effect";
 import { HashLink } from "react-router-hash-link";
 import './Navbar.css'
@@ -8,7 +8,7 @@ const Navbar = () => {
     window.location.reload(false);
   }
   return (
-    <div className="navbar daddynav lg:bg-slate-600 lg:text-white sm:text-black" >
+    <div className="navbar daddynav lg:bg-black lg:text-white sm:text-black" >
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex="0" className="btn btn-ghost lg:hidden">
@@ -37,19 +37,19 @@ const Navbar = () => {
               </HashLink>
             </li>
             <li>
-              <Link to="/">Home</Link>
+              <NavLink to="/">Home</NavLink>
             </li>
             <li>
-              <Link to="/education">Education</Link>
+              <NavLink to="/education">Education</NavLink>
             </li>
             <li>
-              <Link to="/skills">Skills</Link>
+              <NavLink to="/skills">Skills</NavLink>
             </li>
             <li>
-              <Link to="/projects">Projects</Link>
+              <NavLink to="/projects">Projects</NavLink>
             </li>
             <li>
-              <Link to="/blogs">Blogs</Link>
+              <NavLink to="/blogs">Blogs</NavLink>
             </li>
           </ul>
         </div>
@@ -71,28 +71,28 @@ const Navbar = () => {
             </HashLink>
           </li>
           <li>
-            <Link to="/">Home</Link>
+            <NavLink to="/">Home</NavLink>
           </li>
           <li>
-            <Link to="/education">Education</Link>
+            <NavLink to="/education">Education</NavLink>
           </li>
           <li>
-            <Link to="/skills">Skills</Link>
+            <NavLink to="/skills">Skills</NavLink>
           </li>
           <li>
-            <Link to="/projects">Projects</Link>
+            <NavLink to="/projects">Projects</NavLink>
           </li>
           <li>
-            <Link to="/blogs">Blogs</Link>
+            <NavLink to="/blogs">Blogs</NavLink>
           </li>
         </ul>
       </div>
       <div className="navbar-end">
         <ul>
           <li>
-            <Link to="/contactme" className="btn btn-secondary">
+            <NavLink to="/contactme" className="btn btn-secondary">
               Contact me
-            </Link>
+            </NavLink>
           </li>
         </ul>
       </div>
