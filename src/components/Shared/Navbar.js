@@ -2,13 +2,13 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import Typewriter from "typewriter-effect";
 import { HashLink } from "react-router-hash-link";
-import './Navbar.css'
+import "./Navbar.css";
 const Navbar = () => {
   function refreshPage() {
     window.location.reload(false);
   }
   return (
-    <div className="navbar daddynav lg:bg-black lg:text-white sm:text-black" >
+    <div className="navbar daddynav lg:bg-black lg:text-white text-black bg-white shadow-xl shadow-black w-full">
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex="0" className="btn btn-ghost lg:hidden">
@@ -53,7 +53,10 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-        <button onClick={refreshPage} className="btn btn-ghost normal-case lg:text-xl font-serif">
+        <button
+          onClick={refreshPage}
+          className="btn btn-ghost normal-case lg:text-xl font-serif"
+        >
           <Typewriter
             options={{
               strings: ["Fakhrul Islam Fuad"],
