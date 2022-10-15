@@ -8,9 +8,9 @@ const Navbar = () => {
     window.location.reload(false);
   }
   return (
-    <div className="navbar daddynav lg:bg-black lg:text-white text-black bg-white shadow-xl shadow-black w-full">
-      <div className="navbar-start">
-        <div className="dropdown">
+    <div className="navbar daddynav bg-black text-white shadow-xl shadow-black w-full">
+      <div className="navbar-start bg-black text-white">
+        <div className="dropdown bg-black text-white">
           <label tabIndex="0" className="btn btn-ghost lg:hidden">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -29,7 +29,7 @@ const Navbar = () => {
           </label>
           <ul
             tabIndex="0"
-            className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
+            className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-black text-white rounded-box w-52"
           >
             <li>
               <HashLink smooth to="#about">
