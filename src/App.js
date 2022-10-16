@@ -1,4 +1,3 @@
-
 import Navbar from "./components/Shared/Navbar";
 import { Route, Routes } from "react-router-dom";
 import Home from "./components/home/Home";
@@ -12,7 +11,7 @@ import Education from "./components/Education/Education";
 import Projects from "./components/Projects/Projects";
 import ProjectDescription from "./components/Projects/ProjectDescription";
 import Blog from "./components/Blog/Blog";
-
+import "./App.css";
 function App() {
   const [loading, setLoading] = useState(true);
   useEffect(() => {
@@ -41,7 +40,7 @@ function App() {
               path="/projectdescription/:id"
               element={<ProjectDescription />}
             />
-            <Route path="/blogs" element={<Blog/>}/>
+            <Route path="/blogs" element={<Blog />} />
           </Routes>
           <Footer />
         </div>
